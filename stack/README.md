@@ -13,8 +13,13 @@
       - [**isEmpty** Operation](#isempty-operation)
       - [**isFull** Operation](#isfull-operation)
   - [Practical Applications](#practical-applications)
-    - [Why do stacks exist?](#why-do-stacks-exist?)
-&nbsp;
+    - [Why do stacks exist?](#why-do-stacks-exist)
+    - [Advantages](#advantages)
+    - [Disadvantages](#disadvantages)
+    - [Usage Examples](#usage-examples)
+      - [Delimiter Checking](#delimiter-checking)
+      - [Reverse the Data](#reverse-the-data)
+      - 
 &nbsp;
 ## The Concept
 A `stack` is an abstract data type(ADT) that holds an ordered, linear sequence of items, in which elements are added and removed from the top of the `stack`.   
@@ -76,7 +81,7 @@ end procedure
 
 ```
 ### **isEmpty** Operation
-We initialize `top` at -1, as the index in array starts from 0. So we check if the `top` is -1 to determine if the `stack` is empty.
+We initialize `top` at -1, as the index in array starts from 0. So we check if the `top` is -1 to determine if the `stack` is empty.  
 Algorithm of `isEmpty()` function −
 ```
 begin procedure isEmpty
@@ -89,7 +94,7 @@ end procedure
 ```
 
 ### **isFull** Operation
-At first we keep some global `MAX_SIZE`. So, we check if top has reached to `MAX_SIZE` or not.
+At first, we keep some global `MAX_SIZE`. So, we check if top has reached to `MAX_SIZE` or not.  
 Algorithm of `isFull()` function −
 ```
 begin procedure isfull
@@ -120,8 +125,8 @@ The actions you’ve performed are pushed onto a `stack`, and when you select �
   - The stack will fall outside of the memory area, which might lead to an abnormal termination.
 
 
-### Usage Examples
-1. **Delimiter Checking**  
+### **Usage Examples**
+#### **Delimiter Checking**  
 The common application of Stack is delimiter checking, i.e., parsing that involves analyzing a source program syntactically.  
 It is also called parenthesis checking.  
 To perform a delimiter checking, the compiler makes use of a `stack`. When a compiler translates a source program, it reads the characters one at a time, and if it finds an opening delimiter it places it on a `stack`.  
@@ -134,4 +139,4 @@ When a closing delimiter is found, it pops up the opening delimiter from the top
       ## [{(a - b) * (c - d)}/f]
     &nbsp;
              
-1. **Reverse the Data**
+#### **Reverse the Data**
