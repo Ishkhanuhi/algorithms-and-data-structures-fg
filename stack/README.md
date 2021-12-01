@@ -20,8 +20,7 @@
       - [Delimiter Checking](#delimiter-checking)
       - [Reverse the Data](#reverse-the-data)
       - [Call Stack](#call-stack)
-      - [Backtracking Algorithms](#backtracking-algorithms)
-      
+
 &nbsp;
 ## The Concept
 A `stack` is an abstract data type(ADT) that holds an ordered, linear sequence of items, in which elements are added and removed from the top of the `stack`.   
@@ -189,4 +188,3 @@ Suppose we have a program containing three functions: **A, B,** and **C**. **fun
 
 ![alt text](https://static.javatpoint.com/ds/images/applications-of-stack-in-data-structure8.png)
 
-#### **Backtracking algorithms**
