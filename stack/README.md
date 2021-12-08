@@ -42,6 +42,7 @@ Each operation can only be performed at the end of the sequence, thus the operat
   - Pop
 
  #### **Push** Operation
+*Complexity ~ O(1)*   
  The process of putting a new data element onto `stack` is known as a Push Operation. Push operation involves the following steps:  
 
   - **Step 1** − Checks if the stack is full.
@@ -64,6 +65,7 @@ end procedure
 ![alt text](https://www.tutorialspoint.com/data_structures_algorithms/images/stack_push_operation.jpg)  
 
 #### **Pop** Operation
+*Complexity ~ O(n)*  
 Accessing the content while removing it from the `stack`, is known as a Pop Operation.
 In an array implementation of `pop()` operation, the data element **is not actually removed**, instead `top` is decremented to a lower position in the stack to point to the next value. But in linked-list implementation, `pop()` actually removes data element and deallocates memory space.
 
