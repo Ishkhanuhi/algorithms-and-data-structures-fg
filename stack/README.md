@@ -65,7 +65,7 @@ end procedure
 ![alt text](https://www.tutorialspoint.com/data_structures_algorithms/images/stack_push_operation.jpg)  
 
 #### **Pop** Operation
-*Complexity ~ O(n)*  
+*Complexity ~ O(1)*  
 Accessing the content while removing it from the `stack`, is known as a Pop Operation.
 In an array implementation of `pop()` operation, the data element **is not actually removed**, instead `top` is decremented to a lower position in the stack to point to the next value. But in linked-list implementation, `pop()` actually removes data element and deallocates memory space.
 
