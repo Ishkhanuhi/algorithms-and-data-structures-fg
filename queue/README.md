@@ -158,7 +158,7 @@ Applications of Circular Queue
 - Memory management
 - Traffic Management
 
-### Double Ended Queue
+### **Double Ended Queue**
 Deque or Double Ended Queue is a type of `queue` in which insertion and removal of elements can either be performed from the front or the rear.  
 Thus, it does not follow FIFO rule (First In First Out).
 ![alt text](https://cdn.programiz.com/sites/tutorial2program/files/deque.png)
@@ -176,7 +176,7 @@ The time complexity of all the above operations is constant i.e. `O(1)`.
 - To store history in browsers.
 - For implementing both stacks and queues.
 
-### Priority Queue
+### **Priority Queue**
 A `priority queue` is a special type of queue in which each element is associated with a priority value.  
 And, elements are served on the basis of their priority. That is, higher priority elements are served first.  
 
@@ -187,6 +187,14 @@ The element with the highest value is considered the highest priority element. H
 
 We can also set priorities according to our needs.
 ![alt text](https://cdn.programiz.com/sites/tutorial2program/files/Introduction.png)
+
+**Characteristics of Priority Queue**   
+Priority queue in a data structure is an extension of a linear queue that possesses the following properties:
+- Every element has a certain priority assigned to it.
+- Every element of this queue must be comparable.
+- It will delete the element with higher priority before the element with lower priority.
+- If multiple elements have the same priority, it does their removal from the queue according to the FIFO principle.
+
 
 **Implementation of Priority Queue**  
 `Priority queue` can be implemented using an array, a linked list, a heap data structure, or a binary search tree.  
