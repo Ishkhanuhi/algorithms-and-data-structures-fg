@@ -61,6 +61,11 @@ It occurs when the elements of the array are in jumbled order (neither ascending
 **Space Complexity**
 - Space complexity is $O(1)$ because an extra variable is used for swapping.  
 
+|   | **Complexity**  |
+|:-:|---|
+| **Best Case Scenario**  |  $O(n)$ |
+| **Avarage Case Scneario**  | $O(n^2)$  |
+|  **Worst Case Scenario** |  $O(n^2)$ |
 ## Advantages and Disadvantages
 **Advantages**
 - Easy to understand.
