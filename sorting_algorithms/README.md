@@ -39,11 +39,9 @@ sometimes O(log n) additional memory is considered "in-place".
 A comparison sort examines the data only by comparing two elements with a comparison operator.
 - **General method**: insertion, exchange, selection, merging, etc.  
 Exchange sorts include bubble sort and quicksort. Selection sorts include cycle sort and heapsort.
-- Whether the algorithm is **serial or parallel**.  
 The remainder of this discussion almost exclusively concentrates upon serial algorithms and assumes serial operation.
 - **Adaptability**: Whether or not the presortedness of the input affects the running time.  
 Algorithms that take this into account are known to be adaptive.
-- **Online**: An algorithm such as Insertion Sort that can sort a constant stream of input.
 
 ## Comparison of Algorithms
 In these tables, `n` is the number of records to be sorted.  
