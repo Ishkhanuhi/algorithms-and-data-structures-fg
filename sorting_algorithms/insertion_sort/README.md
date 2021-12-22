@@ -75,4 +75,21 @@ The worst-case time complexity of insertion sort is $O(n^2)$.
 The space complexity of insertion sort is $O(1)$.  
 It is because, in insertion sort, an extra variable is required for swapping.
 
+|   |  **Complexity** |
+|:-:|---|
+| **Worst case time**  |  O($n^2$) |
+| **Best case time**  | O($n$)  |
+| **Avarage case time**  | O($n^2$)  |
+
 ## Advantages and Disadvantages
+**Advantages**
+- It, like other quadratic sorting algorithms, is efficient for small data sets.
+- It just necessitates a constant amount of O(1) extra memory space.
+- If the elements are already in sorted order it won’t spend much time in useless operations and will deliver a run time of O(n).
+- It is more efficient when compared to other simple algorithms like Bubble sort and Selection Sort.
+- It can turn out to be very efficient in case of nearly sorted elements.
+
+**Disadvantages**
+- One of the major disadvantages of Insertion sort is its Average Time Complexity of $O(n^2)$.
+- If the number of elements is relatively large it can take large time as compared to Quick Sort or Merge Sort.
+
