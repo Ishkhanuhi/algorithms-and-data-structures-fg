@@ -36,8 +36,8 @@ Swap them if they are not in order.
 
 ```
 begin function bubble_sort(arr, size)
-	for i=0 to n-i-1
-		for j=0 to n-i-2
+	for i=0 to n-1
+		for j=0 to n-i-1
 			if arr[j]>arr[j+1]
 				Swap arr[j] and arr[j+1]
             endif
