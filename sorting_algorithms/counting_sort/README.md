@@ -24,7 +24,7 @@ Before algorithm returns, the sorted set is copied back into data.
 
 - **Input** Unsorted array `A[]` of `n` elements.
 - **Output** Sorted array `B[]`  
-
+![alt text](https://www.oreilly.com/library/view/algorithms-in-a/9780596516246/httpatomoreillycomsourceoreillyimages595756.png)
 Consider an input array `A` having `n` elements in the range of `[0, k]`, where `n` and `k` are positive integer numbers.  
 These `n` elements have to be sorted in ascending order using the **counting sort** technique.  
 Also note that `A[]` can have distinct or duplicate elements.
