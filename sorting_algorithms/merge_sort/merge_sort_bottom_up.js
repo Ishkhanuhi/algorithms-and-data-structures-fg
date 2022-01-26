@@ -1,37 +1,51 @@
-function mergeSort(arr) {
-  var sorted = arr.slice();
-  var n = sorted.length;
-  var buffer = new Array(n);
+function merge(left, right) {
+  var result = [];
 
-  for (let size = 1; size < n; size *= 2) {
-    for (let leftStart = 0; leftStart < n; leftStart += 2 * size) {
-      let left = leftStart;
-      let right = Math.min(left + size, n);
-      let leftLimit = right;
-      let rightLimit = Math.min(right + size, n);
-      let i = left;
-      while (left < leftLimit && right < rightLimit) {
-        if (sorted[left] <= sorted[right]) {
-          buffer[i++] = sorted[left++];
-        } else {
-          buffer[i++] = sorted[right++];
-        }
-      }
-      while (left < leftLimit) {
-        buffer[i++] = sorted[left++];
-      }
-      while (right < rightLimit) {
-        buffer[i++] = sorted[right++];
-      }
+  console.log("Left: " + left);
+  console.log("Right: " + right);
+  while (left.length > 0 && right.length > 0) {
+    if (left[0] < right[0]) {
+      result.push(left.shift());
+    } else {
+      result.push(right.shift());
     }
-    var temp = sorted;
-    var sorted = buffer;
-    var buffer = temp;
   }
 
-  return sorted;
+  result = result.concat(left).concat(right);
+
+  //make sure remaining arrays are empty
+  left.splice(0, left.length);
+  right.splice(0, right.length);
+  console.log("Result: " + result);
+  return result;
 }
 
-let data = [1, 4, 10, 2, 9, 3];
-console.log("\n input: " + data.join(", ") + "\n");
-console.log("output: " + mergeSort(data).join(", ") + "\n");
+/**
+ * Sorts an array in ascending natural order using
+ * merge sort.
+ * @param {Array} items The array to sort.
+ * @return {Array} The sorted array.
+ */
+function mergeSort(items) {
+  // Terminal condition - don't need to do anything for arrays with 0 or 1 items
+  if (items.length < 2) {
+    return items;
+  }
+  let work = [];
+  for (let i = 0; i < items.length; i++) {
+    work.push([items[i]]);
+  }
+  work.push([]); //in case of odd number of items
+
+  for (let lim = items.length; lim > 1; lim = Math.floor((lim + 1) / 2)) {
+    for (var j = 0, k = 0; k < lim; j++, k += 2) {
+      work[j] = merge(work[k], work[k + 1]);
+      console.log(`Work[${j}] = ` + work[j]);
+    }
+    work[j] = []; //in case of odd number of items
+  }
+
+  return work[0];
+}
+
+console.log(mergeSort([6, 3, 7, 2, 8, 4, 9, 1]));
