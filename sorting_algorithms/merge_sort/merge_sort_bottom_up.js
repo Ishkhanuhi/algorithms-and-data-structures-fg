@@ -20,12 +20,6 @@ function merge(left, right) {
   return result;
 }
 
-/**
- * Sorts an array in ascending natural order using
- * merge sort.
- * @param {Array} items The array to sort.
- * @return {Array} The sorted array.
- */
 function mergeSort(items) {
   // Terminal condition - don't need to do anything for arrays with 0 or 1 items
   if (items.length < 2) {
