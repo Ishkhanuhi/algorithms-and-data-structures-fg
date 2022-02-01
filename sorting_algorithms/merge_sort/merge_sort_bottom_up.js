@@ -24,15 +24,11 @@ function mergeSort(items) {
   for (let i = 0; i < items.length; i++) {
     work.push([items[i]]);
   }
-
-  for (let lim = items.length; lim > 1; lim = Math.floor((lim + 1) / 2)) {
-    for (var j = 0, k = 0; k < lim; j++, k += 2) {
-      work[j] = merge(work[k], work[k + 1]);
-      console.log(`Work[${j}] = ` + work[j]);
-    }
+  while (work.length > 1) {
+    work.push(merge(work.shift(), work.shift()));
   }
 
   return work[0];
 }
 
-console.log(mergeSort([6, 3, 7, 2, 8, 4, 9, 1]));
+console.log(mergeSort([6, 3, 7, 2, 8, 4, 9, 1, 5]));
