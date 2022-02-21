@@ -1,12 +1,12 @@
 # Counting Sort
 
-[Table of Contents](Table_of_Contents)
-- [The Concept](The_Concept)
-- [How **Counting Sort** Works?](How_Counting_Sort_Wroks)
-- [Algorithm](Algorithm)
-- [Complexity](Complexity)
-- [Advantages and Disadvantages](Advantages_and_Disadvantages)
-- [Comparison With Other Sorting Algorithms](Comparison_With_Other_Sorting_Algorithms)
+[Table of Contents](#table-of-contents)
+  - [The Concept](#the-concept)
+  - [How **Counting Sort** Works?](#how-counting-sort-works)
+  - [Algorithm](#algorithm)
+  - [Complexity](#complexity)
+  - [Advantages and Disadvantages](#advantages-and-disadvantages)
+  - [Comparison With Other Sorting Algorithms](#comparison-with-other-sorting-algorithms)
   
 
 ## The Concept
