@@ -81,10 +81,10 @@ Let's define `r` to be the range of numbers to be sorted and `n` is the number o
 Now, let's see the time complexity of Radix sort in **best** case, **average** case, and **worst** case.
 * **Best Case Complexity** - It occurs when there is no sorting required, i.e. the array is already sorted.   
 * **Average Case Complexity** - It occurs when the array elements are in jumbled order that is not properly ascending and not properly descending.  
-The average case time complexity of Radix sort is $O(d(n + k))$.
+The average case time complexity of Radix sort is $O(d(n + r))$.
 * **Worst Case Complexity** - It occurs when the array elements are required to be sorted in reverse order.  
 That means suppose you have to sort the array elements in ascending order, but its elements are in descending order.  
-The worst-case time complexity of Radix sort is $O(d(n + k))$.
+The worst-case time complexity of Radix sort is $O(d(n + r))$.
 
 
 |  **Case** |  **Complexity** |
