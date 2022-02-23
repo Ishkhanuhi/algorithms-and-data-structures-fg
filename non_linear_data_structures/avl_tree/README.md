@@ -5,7 +5,7 @@
 - [**AVL** Tree](#avl-tree)
   - [Table of Contents](#table-of-contents)
   - [What are **AVL** Trees?](#what-are-avl-trees)
-  - [How does **AVL** Tree work?](#how-does-avl-tree-work)
+  - [Why **AVL** Tree?](#why-avl-tree)
   - [Balance Factor in **AVL** Tree](#balance-factor-in-avl-tree)
     - [Properties of Balance Factor](#properties-of-balance-factor)
   - [AVL Rotations](#avl-rotations)
@@ -28,13 +28,14 @@ that automatically keeps its height small in the face of arbitrary item insertio
 
 For the **height-balanced binary trees**, the height is defined to be logarithmic $O(log(n))$ in the number $n$ of items.
 
-With going back to our topic, an **AVL** tree (named after inventors **Adelson-Velsky** and **Landis**) is a **self-balancing binary search tree (BST)**. It was the first such data structure to be invented.  
+With going back to our topic, an **AVL** tree (named after inventors **Adelson-Velsky** and **Landis**) is a **self-balancing binary search tree (BST)**.  
+It was the first such data structure to be invented.  
 In an **AVL** tree, the heights of the two child subtrees of any node differ by at most one;  
 if at any time they differ by more than one, rebalancing is done to restore this property.
 
 [Back To Top](#table-of-contents)
 
-## How does **AVL** Tree work?
+## Why **AVL** Tree?
 
 To better understand the need for AVL trees, let us look at some disadvantages of simple binary search trees.
 
